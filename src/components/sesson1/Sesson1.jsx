@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./Bai1.css";
+import "./Sesson1.css";
 import {
     scoreCalculator,
     Ranking,
-} from "../utils/sesson1/ScoreCaculatorAndRanking.js";
-import { PrintDayOfWeek } from "../utils/sesson1/PrintDayOfWeek.js";
-import { taxiFareCalculator } from "../utils/sesson1/TaxiFareCalculator.js";
+} from "../../utils/sesson1/ScoreCaculatorAndRanking.js";
+import { PrintDayOfWeek } from "../../utils/sesson1/PrintDayOfWeek.js";
+import { taxiFareCalculator } from "../../utils/sesson1/TaxiFareCalculator.js";
 
-function Bai1() {
+function Sesson1() {
     // bai1
     const [math, setMath] = useState("");
     const [literature, setLiterature] = useState("");
@@ -78,7 +78,7 @@ function Bai1() {
                     id="scoreCalculator-btn"
                     onClick={handleCalculate}
                 >
-                    Tính Điểm
+                    Tính điểm trung bình:
                 </button>
 
                 {result && (
@@ -135,4 +135,4 @@ function Bai1() {
     );
 }
 
-export default Bai1;
+export default Sesson1;

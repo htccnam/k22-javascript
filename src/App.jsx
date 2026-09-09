@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import "./reset.css";
-import Bai1 from "./components/Bai1.jsx";
+import Sesson1 from "./components/sesson1/sesson1";
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <div className="app-container">
-            <Bai1 />
+            <Sesson1 />
         </div>
     );
 }
