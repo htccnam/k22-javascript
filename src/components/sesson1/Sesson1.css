@@ -7,6 +7,28 @@
     border: 1px solid #e0e0e0;
 }
 
+.exercise-description {
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #f0f8ff;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.exercise-description h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.exercise-description ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.exercise-description li {
+    margin-bottom: 4px;
+}
+
 .form_container h3 {
     margin-top: 0;
     color: #2c3e50;
