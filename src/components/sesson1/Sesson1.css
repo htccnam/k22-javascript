@@ -5,6 +5,7 @@
     padding: 24px;
     margin-bottom: 24px;
     border: 1px solid #e0e0e0;
+    font-size: var(--font-primary);
 }
 
 .exercise-description {
@@ -13,6 +14,7 @@
     background: #f0f8ff;
     border-radius: 8px;
     border-left: 4px solid #3498db;
+    font-size: var(--font-primary);
 }
 
 .exercise-description h3 {
@@ -44,7 +46,6 @@
     margin-bottom: 8px;
     font-weight: 600;
     color: #34495e;
-    font-size: 0.95rem;
 }
 
 .input {
@@ -52,7 +53,6 @@
     padding: 12px;
     border: 2px solid #ddd;
     border-radius: 8px;
-    font-size: 1rem;
     transition: all 0.3s ease;
     box-sizing: border-box;
 }
@@ -69,7 +69,6 @@
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -100,7 +99,6 @@
 .resultBox p {
     margin: 8px 0;
     color: #2c3e50;
-    font-size: 1rem;
     display: flex;
     align-items: center;
     gap: 8px;

@@ -1,0 +1,8 @@
+.header-container {
+    background: goldenrod;
+}
+.nav__list {
+    display: flex;
+    gap: 1rem;
+    font-size: var(--font-primary);
+}
