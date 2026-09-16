@@ -1,11 +1,11 @@
-import "./Header.css";
+import "../Header.css";
 
 function Header({ onSectionChange }) {
     return (
         <header className="header-container">
             <nav>
                 <ul className="nav__list">
-                    <li className="nav_item">
+                    <li className="nav__item">
                         <a
                             onClick={(e) => {
                                 e.preventDefault();
@@ -15,7 +15,7 @@ function Header({ onSectionChange }) {
                             sesson1
                         </a>
                     </li>
-                    <li>
+                    <li className="nav__item">
                         <a
                             onClick={(e) => {
                                 e.preventDefault();
