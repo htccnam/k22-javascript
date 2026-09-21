@@ -1,4 +1,4 @@
-import "../Header.css";
+import "./Header.css";
 
 function Header({ onSectionChange }) {
     return (
@@ -23,6 +23,16 @@ function Header({ onSectionChange }) {
                             }}
                         >
                             sesson2
+                        </a>
+                    </li>
+                    <li className="nav__item">
+                        <a
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("sesson11");
+                            }}
+                        >
+                            sesson11
                         </a>
                     </li>
                 </ul>
