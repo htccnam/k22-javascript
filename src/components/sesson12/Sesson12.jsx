@@ -1,9 +1,11 @@
+import "./Sesson12.css";
 import { useState } from "react";
 import { generateRandomHexColor } from "../../utils/sesson12/generateRandomHexColor";
 import { getFilteredProducts } from "../../utils/sesson12/products";
 import { sortByPrice } from "../../utils/sesson12/products";
 import { generateOTP } from "../../utils/sesson12/OTP";
-import "./Sesson12.css";
+import { getProductDescriptions } from "../../utils/sesson12/products";
+import { calculateTotal } from "../../utils/sesson12/products";
 
 function Sesson12() {
     // list product để test
@@ -134,11 +136,8 @@ function Sesson12() {
             </div>
 
             <p>danh sách sản phẩm ban đầu là:</p>
-            {products.map((product) => (
-                <li>
-                    id:{product.id} - {product.name} - {product.price} -{" "}
-                    {product.category}
-                </li>
+            {getProductDescriptions(products).map((description, index) => (
+                <li key={index}>{description}</li>
             ))}
             <button
                 onClick={handleChangeBg}
@@ -160,12 +159,16 @@ function Sesson12() {
             </div>
             <ul>
                 {filteredProducts.map((product) => (
-                    <li>
+                    <li key={product.id}>
                         id:{product.id} - {product.name} - {product.price} -{" "}
                         {product.category}
                     </li>
                 ))}
             </ul>
+            <p>
+                tổng tiền là:
+                {calculateTotal(filteredProducts).toLocaleString("vi-VN")} VNĐ
+            </p>
             <div>
                 <p>chọn để sắp xếp sản phẩm</p>
                 <select value={sort} onChange={(e) => setSort(e.target.value)}>
@@ -174,7 +177,7 @@ function Sesson12() {
                 </select>
                 <ul>
                     {sortProducts.map((product) => (
-                        <li>
+                        <li key={product.id}>
                             id:{product.id} - {product.name} - {product.price} -{" "}
                             {product.category}
                         </li>

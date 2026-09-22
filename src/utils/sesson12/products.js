@@ -11,7 +11,20 @@ const products = [
     { id: 5, name: "AirPods Pro", price: 6000000, category: "Phụ kiện" },
     { id: 6, name: "Apple Watch", price: 9000000, category: "Phụ kiện" },
 ];
+// lấy tất cả sản phẩm ra
+export function getProductDescriptions(productList) {
+    return productList.map(
+        (product) => `${product.name} - ${product.category} - ${product.price}`,
+    );
+}
+// tính tổng tiền
+export function calculateTotal(productList) {
+    return productList.reduce((total, product) => {
+        return total + product.price;
+    }, 0);
+}
 
+// lọc sản phẩm
 export function getFilteredProducts(productlist, category) {
     if (category === "Tất cả") {
         return productlist;
