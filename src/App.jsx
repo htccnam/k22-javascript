@@ -6,6 +6,7 @@ import Sesson1 from "./components/sesson1/Sesson1";
 import Sesson2 from "./components/sesson2/Sesson2";
 import Sesson11 from "./components/sesson11/Sesson11";
 import Sesson12 from "./components/sesson12/Sesson12";
+import Sesson13 from "./components/sesson13/Sesson13";
 
 function App() {
     const [activateSection, setActivateSection] = useState("sesson1");
@@ -16,6 +17,7 @@ function App() {
             {activateSection == "sesson2" && <Sesson2 />}
             {activateSection == "sesson11" && <Sesson11 />}
             {activateSection == "sesson12" && <Sesson12 />}
+            {activateSection == "sesson13" && <Sesson13 />}
         </div>
     );
 }

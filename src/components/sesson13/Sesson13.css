@@ -1,0 +1,51 @@
+.Sesson13__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+}
+.Sesson13__container p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.Sesson13__container ul {
+    list-style-type: none;
+    padding: 0;
+}
+.Sesson13__container li {
+    background: #e3f2fd;
+    margin: 8px 0;
+    padding: 12px;
+    border-left: 4px solid #2196f3;
+    border-radius: 4px;
+}
+.Sesson13__container strong {
+    color: #1565c0;
+}
+
+/* Assignment styling */
+.assignment {
+    background: #fff8e1;
+    border: 1px solid #ffb74d;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+.assignment h2 {
+    margin-top: 0;
+    color: #ef6c00;
+}
+.assignment pre {
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+}

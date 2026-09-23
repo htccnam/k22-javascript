@@ -45,6 +45,16 @@ function Header({ onSectionChange }) {
                             Sesson12
                         </a>
                     </li>
+                    <li className="nav__item">
+                        <a
+                            onClick={(e) => {
+                                e.preventDefault();
+                                onSectionChange("sesson13");
+                            }}
+                        >
+                            Sesson13
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
