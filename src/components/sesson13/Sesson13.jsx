@@ -36,179 +36,179 @@ function Sesson13() {
         6 * 24 * 60 * 60 * 1000;
 
     const assignmentText = `Yêu cầu bài tập
-Bài 1: Quản lý Nhân sự
-Xây dựng chương trình quản lý nhân sự cho một công ty.
+                            Bài 1: Quản lý Nhân sự
+                            Xây dựng chương trình quản lý nhân sự cho một công ty.
 
-Class Employee
-Tạo class Employee gồm:
+                            Class Employee
+                            Tạo class Employee gồm:
 
-Constructor nhận vào:
+                            Constructor nhận vào:
 
-id: mã nhân viên.
+                            id: mã nhân viên.
 
-name: tên nhân viên.
+                            name: tên nhân viên.
 
-baseSalary: lương cơ bản.
+                            baseSalary: lương cơ bản.
 
-Method calculateSalary():
+                            Method calculateSalary():
 
-Trả về baseSalary.
-Ví dụ:
+                            Trả về baseSalary.
+                            Ví dụ:
 
-const employee = new Employee(1, "Nguyễn Văn A", 10000000);
+                            const employee = new Employee(1, "Nguyễn Văn A", 10000000);
 
-console.log(employee.calculateSalary());
-Kết quả đầu ra:
+                            console.log(employee.calculateSalary());
+                            Kết quả đầu ra:
 
-10000000
-Class Developer
-Tạo class Developer kế thừa từ Employee.
+                            10000000
+                            Class Developer
+                            Tạo class Developer kế thừa từ Employee.
 
-Constructor nhận vào:
+                            Constructor nhận vào:
 
-id
+                            id
 
-name
+                            name
 
-baseSalary
+                            baseSalary
 
-overtimeHours: số giờ làm thêm.
+                            overtimeHours: số giờ làm thêm.
 
-Ghi đè method calculateSalary().
+                            Ghi đè method calculateSalary().
 
-Công thức tính lương:
+                            Công thức tính lương:
 
-baseSalary + overtimeHours * 200000
-Ví dụ:
+                            baseSalary + overtimeHours * 200000
+                            Ví dụ:
 
-const developer = new Developer(2, "Trần Thị B", 12000000, 10);
+                            const developer = new Developer(2, "Trần Thị B", 12000000, 10);
 
-console.log(developer.calculateSalary());
-Kết quả đầu ra:
+                            console.log(developer.calculateSalary());
+                            Kết quả đầu ra:
 
-14000000
-Giải thích:
+                            14000000
+                            Giải thích:
 
-12,000,000 + 10 * 200,000 = 14,000,000
-Class Manager
-Tạo class Manager kế thừa từ Employee.
+                            12,000,000 + 10 * 200,000 = 14,000,000
+                            Class Manager
+                            Tạo class Manager kế thừa từ Employee.
 
-Constructor nhận vào:
+                            Constructor nhận vào:
 
-id
+                            id
 
-name
+                            name
 
-baseSalary
+                            baseSalary
 
-bonus: tiền thưởng.
+                            bonus: tiền thưởng.
 
-Ghi đè method calculateSalary().
+                            Ghi đè method calculateSalary().
 
-Công thức tính lương:
+                            Công thức tính lương:
 
-baseSalary + bonus
-Ví dụ:
+                            baseSalary + bonus
+                            Ví dụ:
 
-const manager = new Manager(3, "Lê Văn C", 20000000, 5000000);
+                            const manager = new Manager(3, "Lê Văn C", 20000000, 5000000);
 
-console.log(manager.calculateSalary());
-Kết quả đầu ra:
+                            console.log(manager.calculateSalary());
+                            Kết quả đầu ra:
 
-25000000
-Tính tổng lương công ty
-Tạo một mảng employees chứa cả Developer và Manager.
+                            25000000
+                            Tính tổng lương công ty
+                            Tạo một mảng employees chứa cả Developer và Manager.
 
-Viết hàm calculateTotalSalary(employeeList) để tính tổng số tiền lương công ty phải trả cho tất cả nhân viên.
+                            Viết hàm calculateTotalSalary(employeeList) để tính tổng số tiền lương công ty phải trả cho tất cả nhân viên.
 
-Ví dụ:
+                            Ví dụ:
 
-const employees = [
-  new Developer(1, "Nguyễn Văn A", 12000000, 10),
-  new Developer(2, "Trần Thị B", 15000000, 5),
-  new Manager(3, "Lê Văn C", 20000000, 5000000),
-  new Manager(4, "Phạm Thị D", 18000000, 3000000),
-];
+                            const employees = [
+                            new Developer(1, "Nguyễn Văn A", 12000000, 10),
+                            new Developer(2, "Trần Thị B", 15000000, 5),
+                            new Manager(3, "Lê Văn C", 20000000, 5000000),
+                            new Manager(4, "Phạm Thị D", 18000000, 3000000),
+                            ];
 
-const totalSalary = calculateTotalSalary(employees);
+                            const totalSalary = calculateTotalSalary(employees);
 
-console.log(totalSalary);
-Kết quả đầu ra:
+                            console.log(totalSalary);
+                            Kết quả đầu ra:
 
-76000000
-Bài 2: Bộ công cụ xử lý Thời gian
-Viết một nhóm hàm tiện ích xử lý thời gian thường dùng trong dự án thực tế.
+                            76000000
+                            Bài 2: Bộ công cụ xử lý Thời gian
+                            Viết một nhóm hàm tiện ích xử lý thời gian thường dùng trong dự án thực tế.
 
-Hàm timeAgo(dateString)
-Viết hàm timeAgo(dateString) trả về thời gian tương tự như các mạng xã hội như Facebook hoặc TikTok.
+                            Hàm timeAgo(dateString)
+                            Viết hàm timeAgo(dateString) trả về thời gian tương tự như các mạng xã hội như Facebook hoặc TikTok.
 
-Nếu thời gian truyền vào cách hiện tại dưới 1 phút: trả về "Vừa xong".
+                            Nếu thời gian truyền vào cách hiện tại dưới 1 phút: trả về "Vừa xong".
 
-Nếu dưới 60 phút: trả về "X phút trước".
+                            Nếu dưới 60 phút: trả về "X phút trước".
 
-Nếu dưới 24 giờ: trả về "X giờ trước".
+                            Nếu dưới 24 giờ: trả về "X giờ trước".
 
-Nếu từ 24 giờ trở lên: trả về định dạng DD/MM/YYYY.
+                            Nếu từ 24 giờ trở lên: trả về định dạng DD/MM/YYYY.
 
-Ví dụ:
+                            Ví dụ:
 
-console.log(timeAgo("2026-09-20T14:59:30+07:00"));
-console.log(timeAgo("2026-09-20T14:30:00+07:00"));
-console.log(timeAgo("2026-09-20T10:00:00+07:00"));
-console.log(timeAgo("2026-09-18T08:00:00+07:00"));
-Kết quả đầu ra gợi ý nếu thời điểm hiện tại là 15:00 20/09/2026:
+                            console.log(timeAgo("2026-09-20T14:59:30+07:00"));
+                            console.log(timeAgo("2026-09-20T14:30:00+07:00"));
+                            console.log(timeAgo("2026-09-20T10:00:00+07:00"));
+                            console.log(timeAgo("2026-09-18T08:00:00+07:00"));
+                            Kết quả đầu ra gợi ý nếu thời điểm hiện tại là 15:00 20/09/2026:
 
-Vừa xong
-30 phút trước
-5 giờ trước
-18/09/2026
-Hàm getCountdown(targetDateString)
-Viết hàm getCountdown(targetDateString).
+                            Vừa xong
+                            30 phút trước
+                            5 giờ trước
+                            18/09/2026
+                            Hàm getCountdown(targetDateString)
+                            Viết hàm getCountdown(targetDateString).
 
-Nhận vào một thời điểm trong tương lai.
+                            Nhận vào một thời điểm trong tương lai.
 
-Trả về object chứa số ngày, giờ, phút, giây còn lại đến thời điểm đó.
+                            Trả về object chứa số ngày, giờ, phút, giây còn lại đến thời điểm đó.
 
-Object trả về có dạng:
+                            Object trả về có dạng:
 
-{
-  days: 0,
-  hours: 0,
-  minutes: 0,
-  seconds: 0,
-}
-Ví dụ:
+                            {
+                            days: 0,
+                            hours: 0,
+                            minutes: 0,
+                            seconds: 0,
+                            }
+                            Ví dụ:
 
-const countdown = getCountdown("2026-09-21T15:30:20+07:00");
+                            const countdown = getCountdown("2026-09-21T15:30:20+07:00");
 
-console.log(countdown);
-Kết quả đầu ra nếu thời điểm hiện tại là 15:00:00 20/09/2026:
+                            console.log(countdown);
+                            Kết quả đầu ra nếu thời điểm hiện tại là 15:00:00 20/09/2026:
 
-{
-  days: 1,
-  hours: 0,
-  minutes: 30,
-  seconds: 20,
-}
-Hàm isWeekend(dateString)
-Viết hàm isWeekend(dateString).
+                            {
+                            days: 1,
+                            hours: 0,
+                            minutes: 30,
+                            seconds: 20,
+                            }
+                            Hàm isWeekend(dateString)
+                            Viết hàm isWeekend(dateString).
 
-Kiểm tra ngày truyền vào có phải là Thứ Bảy hoặc Chủ Nhật hay không.
+                            Kiểm tra ngày truyền vào có phải là Thứ Bảy hoặc Chủ Nhật hay không.
 
-Nếu là cuối tuần, trả về true.
+                            Nếu là cuối tuần, trả về true.
 
-Nếu không phải cuối tuần, trả về false.
+                            Nếu không phải cuối tuần, trả về false.
 
-Ví dụ:
+                            Ví dụ:
 
-console.log(isWeekend("2026-09-19"));
-console.log(isWeekend("2026-09-20"));
-console.log(isWeekend("2026-09-21"));
-Kết quả đầu ra:
+                            console.log(isWeekend("2026-09-19"));
+                            console.log(isWeekend("2026-09-20"));
+                            console.log(isWeekend("2026-09-21"));
+                            Kết quả đầu ra:
 
-true
-true
-false`;
+                            true
+                            true
+                            false`;
 
     return (
         <div className="Sesson13__container">
