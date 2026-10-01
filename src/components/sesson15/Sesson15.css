@@ -1,0 +1,206 @@
+/* ==========================================
+   SESSION 15 - CSS
+   ========================================== */
+
+/* ----- BÀI 1: THEME ----- */
+body.dark-mode {
+    background: #1a1a1a;
+    color: #f0f0f0;
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+
+/* ----- BASE LAYOUT ----- */
+.Sesson15__container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.Sesson15__container section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--section-bg, #f8f9fa);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .Sesson15__container section {
+    --section-bg: #2d2d2d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Sesson15__container h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+    color: var(--heading-color, #333);
+}
+
+body.dark-mode .Sesson15__container h2 {
+    --heading-color: #fff;
+}
+
+.Sesson15__container p {
+    margin: 0 0 12px;
+    color: var(--text-color, #666);
+}
+
+body.dark-mode .Sesson15__container p {
+    --text-color: #ccc;
+}
+
+/* ----- BUTTONS ----- */
+.Sesson15__container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        transform 0.1s;
+}
+
+.Sesson15__container button:hover {
+    background: #0056b3;
+}
+
+.Sesson15__container button:active {
+    transform: scale(0.98);
+}
+
+.Sesson15__container button[type="button"] {
+    background: #28a745;
+}
+
+.Sesson15__container button[type="button"]:hover {
+    background: #1e7e34;
+}
+
+/* ----- BÀI 2: PASSWORD FORM ----- */
+.bai2-password form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.bai2-password label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--label-color, #333);
+}
+
+body.dark-mode .bai2-password label {
+    --label-color: #fff;
+}
+
+.bai2-password input {
+    padding: 10px 12px;
+    border: 1px solid var(--input-border, #ddd);
+    border-radius: 6px;
+    font-size: 14px;
+    width: 280px;
+    background: var(--input-bg, #fff);
+    color: var(--input-text, #333);
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+body.dark-mode .bai2-password input {
+    --input-border: #555;
+    --input-bg: #3d3d3d;
+    --input-text: #fff;
+}
+
+.bai2-password input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* ----- BÀI 3: GALLERY ----- */
+.bai3-gallery form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-image-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: #eee;
+}
+
+body.dark-mode .main-image-wrapper {
+    background: #3d3d3d;
+}
+
+.main-image-wrapper img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thumb-img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    opacity: 0.65;
+}
+
+.thumb-img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.thumb-img.active {
+    border-color: #007bff;
+    opacity: 1;
+    box-shadow:
+        0 0 0 3px rgba(0, 123, 255, 0.3),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .Sesson15__container {
+        padding: 16px;
+    }
+
+    .thumb-img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .bai2-password input {
+        width: 100%;
+    }
+}
